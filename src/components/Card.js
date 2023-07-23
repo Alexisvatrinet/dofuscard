@@ -24,7 +24,9 @@ function Card({ title, description, imageUrl, additionalImages }) {
             <p>{image.description}</p>
             </div>
           ))}
-          {/* Ajoutez du contenu supplémentaire pour la popup ici si nécessaire */}
+          {
+            
+          }
         </div>
       )}
     </div>

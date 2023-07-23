@@ -12,21 +12,21 @@ function App() {
        { id: 3, imageUrl: './sort/165.png', alt: '' , description:'' },
        { id: 4, imageUrl: './sort/167.png', alt: '' , description:'' },
 
-      // Ajoutez d'autres images supplémentaires ici
+     
     ], },
     { id: 2, title: 'Feca', description: 'Protecteur', imageUrl: './feca.jpg', 
     additionalImages : [
       { id: 1, imageUrl: '', alt: '' }, 
       { id: 2, imageUrl: '', alt: '' },
-     // Ajoutez d'autres images supplémentaires ici
+     
    ], },
     { id: 3, title: 'enu', description: 'Chasseur de trésor', imageUrl: './enu.jpg',
     additionalImages : [
       { id: 1, title: 'entrave', imageUrl: '', alt: '' }, 
       { id: 2, imageUrl: '', alt: '' },
-     // Ajoutez d'autres images supplémentaires ici
+    
    ], },
-    // Ajoutez d'autres objets de données de cartes ici
+    
   ];
 
   return (
