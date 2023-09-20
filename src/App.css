@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #baccf0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,13 +14,19 @@
 }
 
 .card {
-  width: 300px;
+  width: 350px;
+  height: 450px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 10px auto;
+  transition: transform 0.3s ease; /* Test transition */
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Flou*/
 }
 
 .card-image {
@@ -48,6 +54,11 @@
   justify-content: flex-start; /* Aligne les cartes à gauche de la ligne */
 }
 
+.card-video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .popup {
   display: flex;
   flex-wrap: wrap;
@@ -67,3 +78,23 @@
 .additional-image:hover {
   border: 2px solid gold; /* Ajoutez une bordure dorée au survol */
 }
+
+.css-video{
+max-width: 100%;
+width: 100%;
+height: auto;
+max-height: 80vh;
+}
+
+.video-playing.card{
+  transform: scale(1.1);
+}
+
+.video-popup.video-playing{
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+

@@ -13,7 +13,9 @@ function App() {
        { id: 4, imageUrl: './sort/167.png', alt: '' , description:'' },
 
      
-    ], },
+    ],
+    videoUrl: "SXwZCdTAfWc?si=0hj9XU1OA7tGvONY&amp;controls=0"
+   },
     { id: 2, title: 'Feca', description: 'Protecteur', imageUrl: './feca.jpg', 
     additionalImages : [
       { id: 1, imageUrl: '', alt: '' }, 
@@ -40,6 +42,7 @@ function App() {
           description={card.description}
           imageUrl={card.imageUrl}
           additionalImages={card.additionalImages}
+          videoUrl={card.videoUrl}
         />
       ))}
       </div>
