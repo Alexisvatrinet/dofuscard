@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
-function Card({ title, description, imageUrl, additionalImages, videoUrl }) {
+interface CardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  additionalImages: { id: number; imageUrl: string; alt: string; description?: string }[];
+  videoUrl: string | undefined;
+}
+
+const Card: React.FC<CardProps> = ({ title, description, imageUrl, additionalImages, videoUrl }) => {
   const [showVideoPopup, setShowVideoPopup] = useState(false);
   const [showInfoPopup, setShowInfoPopup] = useState(false);
 
@@ -52,7 +60,7 @@ function Card({ title, description, imageUrl, additionalImages, videoUrl }) {
             className="card-video css-video"
             width="560"
             height="315"
-            src={`https://www.youtube.com/embed/${videoUrl}`}
+            src={`https://www.youtube.com/embed/${videoUrl ?? 'URL_PAR_DEFAUT'}`}
             title="Video"
             frameBorder="0"
             allowFullScreen
@@ -61,6 +69,6 @@ function Card({ title, description, imageUrl, additionalImages, videoUrl }) {
       )}
     </div>
   );
-}
+};
 
 export default Card;

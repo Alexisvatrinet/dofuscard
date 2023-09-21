@@ -7,7 +7,7 @@ function App() {
   const cardsData = [
     { id: 1, title: 'Cra', description: 'Archer', imageUrl: './cra.jpg' , 
     additionalImages : [
-       { id: 1, imageUrl: './sort/1.png', alt: '' }, 
+       { id: 1, imageUrl: './public/sort/1.png', alt: '' }, 
        { id: 2, imageUrl: './sort/2.png', alt: '' , description:'fleche' },
        { id: 3, imageUrl: './sort/165.png', alt: '' , description:'' },
        { id: 4, imageUrl: './sort/167.png', alt: '' , description:'' },
