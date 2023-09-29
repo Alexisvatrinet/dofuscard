@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-interface CardProps {
+export interface CardProps {
   title: string;
   description: string;
   imageUrl: string;

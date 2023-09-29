@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'; 
-import Card from './components/Card'; // Importez votre composant de carte personnalisé
-
+import CardSlider from './components/CardSlider';
+import Card from './components/Card';
 
 function App() {
   const cardsData = [
@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="App">
       {/* Boucle pour afficher les cartes */}
+      <CardSlider cards={cardsData} />
       <div className="card-container">
       {cardsData.map(card => (
         <Card
